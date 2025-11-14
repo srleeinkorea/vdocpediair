@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>V.Doc PEDI-AIR | 소아 재택 호흡관리 AI 솔루션</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --primary: #2f6af2;
+      --primary-soft: #eef3ff;
+      --text-main: #2f3033;
+      --text-sub: #6f7782;
+      --border: #e5eaf2;
+      --bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.9);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--primary);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: var(--text-sub);
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 80px 20px 72px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .hero-sub {
+      font-size: 16px;
+      color: var(--text-sub);
+      margin-bottom: 28px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      border-radius: 999px;
+      padding: 11px 20px;
+      font-size: 14px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .btn-primary:hover {
+      background: #2054d7;
+      border-color: #2054d7;
+    }
+
+    .btn-outline {
+      background: #fff;
+      color: var(--primary);
+      border-color: var(--primary-soft);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      background: #f7f9ff;
+    }
+
+    .hero-visual {
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      padding: 20px 18px;
+      background: linear-gradient(135deg,#f5f7ff,#ffffff);
+      font-size: 13px;
+    }
+
+    .hero-visual-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--text-sub);
+    }
+
+    .hero-diagram {
+      border-radius: 18px;
+      border: 1px dashed var(--border);
+      padding: 16px 14px;
+      background: #ffffffaa;
+    }
+
+    .diagram-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .pill {
+      border-radius: 999px;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+
+    .pill-strong {
+      border-color: var(--primary-soft);
+      background: #f4f7ff;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .diagram-arrow {
+      font-size: 16px;
+      color: var(--text-sub);
+    }
+
+    .section {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 56px 20px 24px;
+    }
+
+    .section-ti
